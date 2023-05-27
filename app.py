@@ -1,7 +1,5 @@
 import json
 from flask import Flask, request, jsonify
-import pickle
-import tensorflow as tf
 from keras.models import load_model
 from extract import class_prediction, get_response
 
@@ -21,6 +19,9 @@ def chatbot():
     ints = class_prediction(message, model)
     res = get_response(ints, intents)
 
+    if not res:
+        fallback_res = "Desculpe, não tenho uma resposta para isso no momento."
+        return jsonify({'response': fallback_res})
 
     return jsonify({'response': res})
 
