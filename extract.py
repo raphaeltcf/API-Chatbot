@@ -34,6 +34,7 @@ def class_prediction(writing, model):
 def get_response(intents, intents_json):
     tag = intents[0]['intent']
     list_of_intents = intents_json['intents']
+    result = "Desculpe, não tenho uma resposta para isso no momento."
     for idx in list_of_intents:
         if idx['tag'] == tag:
             result = random.choice(idx['responses'])
