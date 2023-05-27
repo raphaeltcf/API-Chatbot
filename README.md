@@ -77,4 +77,4 @@ Caso você queira utilizar a API do Chatbot, ela está feita com base no [CHATBO
 
 
 ## 🛠️ built with
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="40" height="40" /> <i class="devicon-flask-original" width="40" height="40"></i>  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="40" height="40" /> <i class="devicon-flask-original"</i>  
