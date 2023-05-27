@@ -11,6 +11,11 @@ intents = json.loads(open('intents.json', encoding='utf-8').read())
 app = Flask(__name__)
 
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Bem vindo a API Nine Nine"
+
+
 @app.route('/chatbot', methods=['POST'])
 def chatbot():
     data = request.get_json()
@@ -18,10 +23,6 @@ def chatbot():
 
     ints = class_prediction(message, model)
     res = get_response(ints, intents)
-
-    if not res:
-        fallback_res = "Desculpe, não tenho uma resposta para isso no momento."
-        return jsonify({'response': fallback_res})
 
     return jsonify({'response': res})
 
