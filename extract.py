@@ -39,6 +39,9 @@ def get_response(intents, intents_json):
         if idx['tag'] == tag:
             result = random.choice(idx['responses'])
             break
-    return result
+    if result == "Desculpe, não tenho uma resposta para isso no momento.":
+        return result
+    else:
+        return {"response": result}
 
 
