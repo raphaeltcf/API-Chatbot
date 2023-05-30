@@ -73,7 +73,7 @@ $ python app.py
 
 ## CHATBOT 
 
-Caso você queira utilizar a API do Chatbot, ela está feita com base no [CHATBOT(https://github.com/raphaeltcf/API-Chatbot), você pode fazer alterações nele para que possa funcionar com base nas suas necessidades.)]
+Caso você queira utilizar a API do Chatbot, ela está feita com base no [CHATBOT(https://github.com/raphaeltcf/API-Chatbot)], você pode fazer alterações nele para que possa funcionar com base nas suas necessidades.
 
 
 ## 🛠️ built with
